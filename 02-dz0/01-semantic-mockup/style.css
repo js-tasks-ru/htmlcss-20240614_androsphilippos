@@ -1,0 +1,48 @@
+.page {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.header {
+  padding-top: 4px;
+  text-align: center;
+  background-color: red;
+}
+
+.title {
+  margin-top: 16px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  justify-content: center;
+  background-color: orange;
+}
+
+.nav__link {
+  font-size: 24px;
+  color: white;
+}
+
+.content {
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  background-color: green;
+}
+
+.post {
+  padding: 16px;
+  background-color: blue;
+}
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 32px;
+  text-align: center;
+  background-color: fuchsia;
+}
