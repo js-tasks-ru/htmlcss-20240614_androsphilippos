@@ -1,17 +1,12 @@
 /* Стилизация кнопки */
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 182px);
-  grid-template-rows: repeat(2, 48px);
-  grid-auto-flow: column;
-  grid-gap: 2rem;
-}
 .button {
   appearance: none;
 
-  width: 182px;
+  min-width: 182px;
   height: 48px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   border: none;
   border-radius: 8px;
