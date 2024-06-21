@@ -1,10 +1,4 @@
 /* Стилизация аккордеона */
-
-.accordion {
-  display: grid;
-  gap: 8px;
-  max-width: 730px;
-}
 .accordion__details {
   padding: 24px 32px;
   border-radius: 8px;
@@ -29,10 +23,10 @@
 }
 
 /* Анимация маркера */
-.accordion__details img {
+.accordion__details .accordion__icon {
   transition: transform 0.5s;
 }
 
-.accordion__details[open] img {
+.accordion__details[open] .accordion__icon {
   transform: rotateZ(180deg);
 }
