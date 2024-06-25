@@ -1,10 +1,4 @@
 .histogram {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
-
   padding: 1rem 1.5rem 1.5rem;
 
   border-radius: 0.5rem;
@@ -12,10 +6,6 @@
 }
 
 .histogram__link {
-  position: absolute;
-  top: 20px;
-  right: 24px;
-
   text-decoration: none;
 
   font-family: 'Inter', sans-serif;
@@ -28,7 +18,8 @@
 
 .histogram__header {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .histogram__title {
@@ -42,7 +33,9 @@
 }
 
 .histogram__description {
+  width: 100%;
   margin: 0;
+  order: 1;
 
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -52,29 +45,18 @@
 }
 
 .histogram__wrapper {
+  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
   gap: 1px;
   height: 50px;
 }
 
 .histogram__item {
-  width: 9px;
   display: flex;
+  flex-basis: 9px;
   flex-direction: column-reverse;
 }
 
 .histogram__pipe {
   background-color: var(--primary);
 }
-
-/* Alternate with svg */
-
-/* .histogram__item {
-  min-width: 9px;
-}
-
-.histogram__item svg {
-  fill: var(--primary);
-  transform: scaleY(-1);
-} */
