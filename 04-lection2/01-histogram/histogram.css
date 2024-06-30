@@ -6,6 +6,8 @@
 }
 
 .histogram__link {
+  margin-top: 3px;
+
   text-decoration: none;
 
   font-family: 'Inter', sans-serif;
@@ -45,18 +47,14 @@
 }
 
 .histogram__wrapper {
-  margin-top: 40px;
+  margin-top: 39px;
   display: flex;
+  align-items: flex-end;
   gap: 1px;
   height: 50px;
 }
 
 .histogram__item {
-  display: flex;
-  flex-basis: 9px;
-  flex-direction: column-reverse;
-}
-
-.histogram__pipe {
+  flex: 1 0 auto;
   background-color: var(--primary);
 }
