@@ -1,12 +1,11 @@
 .calendar {
   width: 100%;
-  padding: 28px 26px;
+  padding: 28px 26px 32px;
   border-radius: 8px;
   border: 1px solid var(--gray-3);
 }
 
 .calendar__wrapper {
-  margin-top: 34px;
   position: relative;
   padding-bottom: 100%;
 }
@@ -23,6 +22,7 @@
 }
 
 .calendar__title {
+  margin-bottom: 24px;
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
