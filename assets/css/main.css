@@ -23,6 +23,8 @@
   --gray-5: #e2e6e8;
   --gray-6: #f3f5f5;
   --gray-7: #e3e7ea;
+  --gray-8: #c4c4c4;
+  --slate: #334d6e;
 
   --success: var(--blue);
   --error: var(--red);
