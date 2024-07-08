@@ -1,6 +1,7 @@
 .preview {
   padding-top: 67px;
   padding-bottom: 204px;
+  background-color: var(--gray-1);
 }
 
 .preview__cards {
