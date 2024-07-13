@@ -14,12 +14,14 @@
     <div id="modal" class="modal">
       <div class="modal__content">
         <button id="modal-close" class="modal__close" type="button">
-          <img
-            width="16"
-            height="16"
-            src="../../assets/images/close.svg"
-            alt=""
-          />
+          <svg
+            class="modal__icon"
+            width="24"
+            height="24"
+            aria-label="icon-close"
+          >
+            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+          </svg>
         </button>
         <p class="modal__title">Modal title</p>
         <p class="modal__text">

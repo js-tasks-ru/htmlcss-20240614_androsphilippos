@@ -42,3 +42,7 @@
 .tooltip--preview .tooltip__trigger + .tooltip__bubble {
   display: flex;
 }
+
+.tooltip__icon {
+  color: var(--black);
+}

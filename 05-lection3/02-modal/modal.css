@@ -45,3 +45,7 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.modal__icon {
+  color: var(--gray-4);
+}
