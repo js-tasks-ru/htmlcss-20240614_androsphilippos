@@ -1,14 +1,25 @@
 .header {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .header__title {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 50px;
+  font-size: 28px;
   font-weight: 500;
-  line-height: 64px;
+  line-height: 38px;
   color: var(--black);
+
+  @media (min-width: 1025px) {
+    font-size: 50px;
+    line-height: 64px;
+  }
 }
