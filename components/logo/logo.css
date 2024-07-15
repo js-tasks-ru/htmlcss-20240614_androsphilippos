@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  gap: 8px;
+  margin: auto;
+
+  @media (min-width: 1025px) {
+    margin: 0;
+  }
+}
+
+.logo__item {
+  width: 32px;
+  height: 32px;
+  background-color: var(--black);
+}
+
+.logo__item--square {
+  background-color: var(--black);
+}
+
+.logo__item--circle {
+  border-radius: 50%;
+  background-color: var(--black);
+}
+
+.logo__item--triangle {
+  background: linear-gradient(45deg, var(--black) 50%, transparent 50%);
+}
