@@ -30,3 +30,7 @@
 .accordion__details[open] .accordion__icon {
   transform: rotateZ(180deg);
 }
+
+.accordion__icon {
+  color: var(--gray-4);
+}
