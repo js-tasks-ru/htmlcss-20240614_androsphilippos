@@ -1,0 +1,16 @@
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./public/forest_400.jpg');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('./public/forest_768.jpg');
+  }
+  @media (min-width: 1024px) {
+    background-image: url('./public/forest_1024.jpg');
+    @media (min-resolution: 2dppx) {
+      background-image: url('./public/forest_2560.jpg');
+    }
+  }
+}
