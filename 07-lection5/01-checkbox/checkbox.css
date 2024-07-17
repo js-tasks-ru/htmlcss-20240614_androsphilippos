@@ -1,7 +1,7 @@
 .check {
   display: flex;
-  gap: 12px;
   align-items: center;
+  gap: 12px;
 }
 
 .check__box {
@@ -38,6 +38,6 @@
   color: var(--gray-2);
 }
 
-.check__input:focus-visible + .check__box {
-  box-shadow: 0 0 0 2px var(--primary);
+.check__input:focus-visible ~ .check__label {
+  text-decoration: underline;
 }
