@@ -1,0 +1,43 @@
+.check {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.check__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-2);
+  background-color: transparent;
+  color: transparent;
+}
+
+.check__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gray-4);
+}
+
+.check__input {
+  display: none;
+}
+
+.check__input:checked + .check__box {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.check__input:disabled + .check__box {
+  background-color: var(--gray-2);
+}
+
+.check__input:disabled ~ .check__label {
+  color: var(--gray-2);
+}
