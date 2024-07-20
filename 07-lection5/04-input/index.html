@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <label class="input" for="input-1">
+      <span class="input__label">Default</span>
+      <div class="input__wrapper">
+        <input
+          class="input__field"
+          id="input-1"
+          type="text"
+          placeholder="Default"
+        />
+      </div>
+    </label>
+    <label class="input" for="input-2">
+      <span class="input__label">Success</span>
+      <div class="input__wrapper">
+        <input
+          class="input__field input__field--success"
+          id="input-2"
+          type="text"
+          placeholder="Success"
+        />
+        <svg
+          class="input__icon input__icon--success"
+          width="24"
+          height="24"
+          aria-label="icon-success"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#success"></use>
+        </svg>
+      </div>
+    </label>
+    <label class="input" for="input-3">
+      <span class="input__label">Error</span>
+      <div class="input__wrapper">
+        <input
+          class="input__field input__field--error"
+          id="input-3"
+          type="text"
+          placeholder="Error"
+        />
+        <svg
+          class="input__icon input__icon--error"
+          width="24"
+          height="24"
+          aria-label="icon-error"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#error"></use>
+        </svg>
+      </div>
+    </label>
+  </body>
 </html>
