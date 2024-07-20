@@ -6,6 +6,44 @@
         <link rel="stylesheet" href="./checkbox.css">
     </head>
     <body>
-
+        <label for="check-1" class="check">
+            <input class="check__input visual-hidden" type="checkbox" id="check-1" name="check-1">
+            <div class="check__box">
+                <svg
+                    width="20"
+                    height="20"
+                    aria-label="icon-check"
+                >
+                    <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                </svg>
+            </div>
+            <span class="check__label">Default</span>
+        </label>
+        <label for="check-2" class="check">
+            <input class="check__input visual-hidden" type="checkbox" id="check-2" name="check-2" checked>
+            <div class="check__box">
+                <svg
+                    width="20"
+                    height="20"
+                    aria-label="icon-check"
+                >
+                    <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                </svg>
+            </div>
+            <span class="check__label">Checked</span>
+        </label>
+        <label for="check-3" class="check">
+            <input class="check__input visual-hidden" type="checkbox" id="check-3" name="check-3" disabled>
+            <div class="check__box">
+                <svg
+                    width="20"
+                    height="20"
+                    aria-label="icon-check"
+                >
+                    <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                </svg>
+            </div>
+            <span class="check__label">Disabled</span>
+        </label>
     </body>
 </html>
