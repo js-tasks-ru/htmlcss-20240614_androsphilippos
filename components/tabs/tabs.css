@@ -1,0 +1,20 @@
+.tabs {
+  display: flex;
+  gap: 40px;
+}
+
+.tabs__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gray-3);
+  cursor: pointer;
+}
+
+.tabs__input:checked + .tabs__label {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+  color: var(--black);
+}

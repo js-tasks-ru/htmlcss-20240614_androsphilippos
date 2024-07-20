@@ -17,17 +17,38 @@
             <div class="logo__item logo__item--circle"></div>
             <div class="logo__item logo__item--triangle"></div>
           </div>
-          <h1 class="header__title">Reusable component library</h1>
-          <div class="tabs">
-            <input type="radio" id="#all-tab" name="tabs" checked />
-            <input type="radio" id="#complex-tab" name="tabs" />
-            <input type="radio" id="#simple-tab" name="tabs" />
 
-            <div class="tabs__scroller">
-              <label for="#all-tab">All components</label>
-              <label for="#complex-tab">Complex</label>
-              <label for="#simple-tab">Simple</label>
-            </div>
+          <h1 class="header__title">Reusable component library</h1>
+
+          <div class="tabs">
+            <label class="tabs__item" for="#all-tab">
+              <input
+                class="tabs__input visual-hidden"
+                type="radio"
+                id="#all-tab"
+                name="tabs"
+                checked
+              />
+              <span class="tabs__label">All components</span>
+            </label>
+            <label class="tabs__item" for="#complex-tab">
+              <input
+                class="tabs__input visual-hidden"
+                type="radio"
+                id="#complex-tab"
+                name="tabs"
+              />
+              <span class="tabs__label">Complex</span>
+            </label>
+            <label class="tabs__item" for="#simple-tab">
+              <input
+                class="tabs__input visual-hidden"
+                type="radio"
+                id="#simple-tab"
+                name="tabs"
+              />
+              <span class="tabs__label">Simple</span>
+            </label>
           </div>
         </div>
       </div>
