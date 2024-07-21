@@ -37,24 +37,27 @@
 }
 
 .input__icon {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 16px;
 }
 
-.input__field--success {
+.input--success .input__field {
   border-color: var(--success);
 }
 
-.input__field--error {
+.input--error .input__field {
   border-color: var(--error);
 }
 
-.input__icon--success {
+.input--success .input__icon--success {
+  display: inline-flex;
   color: var(--success);
 }
 
-.input__icon--error {
+.input--error .input__icon--error {
+  display: inline-flex;
   color: var(--error);
 }

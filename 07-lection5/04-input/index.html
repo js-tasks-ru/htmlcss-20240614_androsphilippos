@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./input.css" />
   </head>
   <body>
-    <label class="input" for="input-1">
-      <span class="input__label">Default</span>
+    <div class="input">
+      <label class="input__label" for="input-1">Default</label>
       <div class="input__wrapper">
         <input
           class="input__field"
@@ -15,13 +15,29 @@
           type="text"
           placeholder="Default"
         />
+        <svg
+          class="input__icon input__icon--success"
+          width="24"
+          height="24"
+          aria-label="icon-success"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#success"></use>
+        </svg>
+        <svg
+          class="input__icon input__icon--error"
+          width="24"
+          height="24"
+          aria-label="icon-error"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#error"></use>
+        </svg>
       </div>
-    </label>
-    <label class="input" for="input-2">
-      <span class="input__label">Success</span>
+    </div>
+    <div class="input input--success">
+      <label class="input__label" for="input-2">Success</label>
       <div class="input__wrapper">
         <input
-          class="input__field input__field--success"
+          class="input__field"
           id="input-2"
           type="text"
           placeholder="Success"
@@ -34,17 +50,6 @@
         >
           <use xlink:href="../../assets/images/sprite.svg#success"></use>
         </svg>
-      </div>
-    </label>
-    <label class="input" for="input-3">
-      <span class="input__label">Error</span>
-      <div class="input__wrapper">
-        <input
-          class="input__field input__field--error"
-          id="input-3"
-          type="text"
-          placeholder="Error"
-        />
         <svg
           class="input__icon input__icon--error"
           width="24"
@@ -54,6 +59,33 @@
           <use xlink:href="../../assets/images/sprite.svg#error"></use>
         </svg>
       </div>
-    </label>
+    </div>
+    <div class="input input--error">
+      <label class="input__label" for="input-3">Error</label>
+      <div class="input__wrapper">
+        <input
+          class="input__field"
+          id="input-3"
+          type="text"
+          placeholder="Error"
+        />
+        <svg
+          class="input__icon input__icon--succes"
+          width="24"
+          height="24"
+          aria-label="icon-success"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#success"></use>
+        </svg>
+        <svg
+          class="input__icon input__icon--error"
+          width="24"
+          height="24"
+          aria-label="icon-error"
+        >
+          <use xlink:href="../../assets/images/sprite.svg#error"></use>
+        </svg>
+      </div>
+    </div>
   </body>
 </html>
