@@ -30,8 +30,9 @@
   --gray-8: #c4c4c4;
   --gray-9: #90a0b7;
   --slate: #334d6e;
+  --green: #22c55e;
 
-  --success: var(--blue);
+  --success: var(--green);
   --error: var(--red);
 
   --primary: var(--blue);
