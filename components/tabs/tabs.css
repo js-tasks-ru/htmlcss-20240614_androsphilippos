@@ -1,0 +1,41 @@
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.tabs__label {
+  padding-bottom: 8px;
+  flex-shrink: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gray-3);
+  cursor: pointer;
+}
+
+.tabs__input[id='#all-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#all-tab'],
+.tabs__input[id='#complex-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#complex-tab'],
+.tabs__input[id='#simple-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#simple-tab'] {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+  color: var(--black);
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__input[id='#all-tab']:checked ~ .tabs__content--all,
+.tabs__input[id='#complex-tab']:checked ~ .tabs__content--complex,
+.tabs__input[id='#simple-tab']:checked ~ .tabs__content--simple {
+  display: block;
+}
