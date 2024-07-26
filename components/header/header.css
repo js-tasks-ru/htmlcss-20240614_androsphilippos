@@ -1,15 +1,43 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+
+  @media (min-width: 1025px) {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
 }
 
 .header__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'burger logo .'
+    'title title title';
+
+  @media (min-width: 1025px) {
+    grid-template-areas:
+      'logo . .'
+      'title title title';
+  }
+}
+
+.header__burger {
+  grid-area: burger;
+}
+
+.header__logo {
+  grid-area: logo;
+  margin: auto;
+
+  @media (min-width: 1025px) {
+    margin: 0;
+  }
 }
 
 .header__title {
+  grid-area: title;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Inter', sans-serif;
