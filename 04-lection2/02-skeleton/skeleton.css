@@ -38,6 +38,12 @@
     var(--gray-7) 77.5%,
     var(--gray-2) 102.52%
   );
+  background-size: 200%;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: loading;
 }
 
 .skeleton__rect--50 {
@@ -46,4 +52,14 @@
 
 .skeleton__rect--75 {
   width: 75%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
 }
