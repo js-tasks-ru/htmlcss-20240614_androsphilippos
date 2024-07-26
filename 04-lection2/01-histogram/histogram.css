@@ -56,12 +56,12 @@
   align-items: flex-end;
   gap: 1px;
   height: 50px;
+  animation: appear 0.5s ease-out;
 }
 
 .histogram__item {
   flex: 1 0 auto;
   background-color: var(--primary);
-  animation: appear 0.5s ease-out;
 }
 
 @keyframes appear {
