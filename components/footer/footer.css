@@ -3,8 +3,13 @@
   padding-bottom: 70px;
 }
 
+.footer--inner {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
 .footer__title {
-  margin-top: 0;
+  margin: 0;
   font-family: 'Inter', sans-serif;
   font-size: 38px;
   font-weight: 500;
@@ -13,7 +18,18 @@
   color: var(--black);
 }
 
+.footer__title--inner {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray-3);
+}
+
 .footer__description {
+  margin-top: 32px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
