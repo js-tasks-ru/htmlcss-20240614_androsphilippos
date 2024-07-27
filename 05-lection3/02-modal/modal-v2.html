@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Страница с модалкой 2 вариант-->
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css" />
+    <link rel="stylesheet" href="../../07-lection5/04-input/input.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button id="modal-open" class="button button--primary" type="button">
+      Open modal
+    </button>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <button id="modal-close" class="modal__close" type="button">
+          <svg
+            class="modal__icon"
+            width="24"
+            height="24"
+            aria-label="icon-close"
+          >
+            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form" action="">
+          <div class="input">
+            <label class="input__label" for="input-1">Name</label>
+            <div class="input__wrapper">
+              <input
+                class="input__field"
+                id="input-1"
+                type="text"
+                placeholder="Enter your name"
+              />
+              <svg
+                class="input__icon input__icon--success"
+                width="24"
+                height="24"
+                aria-label="icon-success"
+              >
+                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+              </svg>
+              <svg
+                class="input__icon input__icon--error"
+                width="24"
+                height="24"
+                aria-label="icon-error"
+              >
+                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label" for="input-2">Email</label>
+            <div class="input__wrapper">
+              <input
+                class="input__field"
+                id="input-1"
+                type="text"
+                placeholder="example@example.com"
+              />
+              <svg
+                class="input__icon input__icon--success"
+                width="24"
+                height="24"
+                aria-label="icon-success"
+              >
+                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+              </svg>
+              <svg
+                class="input__icon input__icon--error"
+                width="24"
+                height="24"
+                aria-label="icon-error"
+              >
+                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="form__button button button--primary" type="button">
+            Sumbit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
