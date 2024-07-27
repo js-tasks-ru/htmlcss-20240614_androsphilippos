@@ -25,6 +25,10 @@
 
 .header__burger {
   grid-area: burger;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
 }
 
 .header__logo {

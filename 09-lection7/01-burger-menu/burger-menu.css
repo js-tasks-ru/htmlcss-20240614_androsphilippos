@@ -64,7 +64,7 @@
   color: var(--black);
 }
 
-.burger-menu__button {
+.burger-menu-button {
   appearance: none;
 
   width: 32px;
@@ -79,13 +79,13 @@
   background-color: transparent;
 }
 
-.burger-menu__button--open {
+.burger-menu-button--open {
   @media (min-width: 1025px) {
     display: none;
   }
 }
 
-.burger-menu__button--close {
+.burger-menu-button--close {
   border-radius: 50%;
   background-color: var(--gray-2);
 }
