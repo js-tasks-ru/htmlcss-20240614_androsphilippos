@@ -18,10 +18,8 @@
   color: var(--black);
 }
 
-.footer__title--inner {
-  font-family: 'Inter', sans-serif;
+.footer--inner .footer__title {
   font-size: 12px;
-  font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.04em;
   text-transform: uppercase;

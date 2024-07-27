@@ -10,7 +10,7 @@
 
 .header__content {
   display: grid;
-  gap: 40px;
+  row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'burger logo .'
@@ -23,9 +23,7 @@
   }
 }
 
-.header__content--inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.header--inner .header__content {
   grid-template-areas: 'burger logo .';
 
   @media (min-width: 1025px) {
