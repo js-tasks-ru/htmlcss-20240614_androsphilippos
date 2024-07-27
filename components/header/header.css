@@ -1,15 +1,40 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+
+  @media (min-width: 1025px) {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
 }
 
 .header__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'burger logo .'
+    'title title title';
+
+  @media (min-width: 1025px) {
+    grid-template-areas:
+      'logo . .'
+      'title title title';
+  }
+}
+
+.header__content--inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'burger logo .';
+
+  @media (min-width: 1025px) {
+    grid-template-areas: 'logo . dark-mode';
+  }
 }
 
 .header__title {
+  grid-area: title;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Inter', sans-serif;
@@ -21,5 +46,23 @@
   @media (min-width: 1025px) {
     font-size: 50px;
     line-height: 64px;
+  }
+}
+
+.header__logo {
+  grid-area: logo;
+  margin: auto;
+
+  @media (min-width: 1025px) {
+    margin: 0;
+  }
+}
+
+.header__dark-mode {
+  grid-area: dark-mode;
+  display: none;
+
+  @media (min-width: 1025px) {
+    margin-left: auto;
   }
 }
