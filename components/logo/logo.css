@@ -1,11 +1,6 @@
 .logo {
   display: flex;
   gap: 8px;
-  margin: auto;
-
-  @media (min-width: 1025px) {
-    margin: 0;
-  }
 }
 
 .logo__item {

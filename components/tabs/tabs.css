@@ -23,7 +23,13 @@
   .tabs__label[for='#complex-tab'],
 .tabs__input[id='#simple-tab']:checked
   ~ .tabs__scroller
-  .tabs__label[for='#simple-tab'] {
+  .tabs__label[for='#simple-tab'],
+.tabs__input[id='#html-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#html-tab'],
+.tabs__input[id='#css-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#css-tab'] {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   text-underline-offset: 8px;
@@ -36,6 +42,8 @@
 
 .tabs__input[id='#all-tab']:checked ~ .tabs__content--all,
 .tabs__input[id='#complex-tab']:checked ~ .tabs__content--complex,
-.tabs__input[id='#simple-tab']:checked ~ .tabs__content--simple {
+.tabs__input[id='#simple-tab']:checked ~ .tabs__content--simple,
+.tabs__input[id='#html-tab']:checked ~ .tabs__content--html,
+.tabs__input[id='#css-tab']:checked ~ .tabs__content--css {
   display: block;
 }

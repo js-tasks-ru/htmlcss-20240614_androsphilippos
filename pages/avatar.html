@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css" />
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+    <title>Avatar</title>
+  </head>
+  <body class="page page--inner">
+    <header class="header header--inner">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo logo" href="../index.html">
+            <div class="logo__item logo__item--square"></div>
+            <div class="logo__item logo__item--circle"></div>
+            <div class="logo__item logo__item--triangle"></div>
+          </a>
+
+          <div class="header__dark-mode dark-mode">
+            <svg width="24" height="24" aria-label="icon-sun">
+              <use xlink:href="../assets/images/sprite.svg#sun"></use>
+            </svg>
+            <label for="toggler-dark-mode" class="toggler">
+              <input
+                class="toggler__input visual-hidden"
+                type="checkbox"
+                id="toggler-dark-mode"
+                name="toggler-dark-mode"
+              />
+              <div class="toggler__outer-box">
+                <div class="toggler__inner-box"></div>
+              </div>
+            </label>
+            <svg width="24" height="24" aria-label="icon-moon">
+              <use xlink:href="../assets/images/sprite.svg#moon"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="page__inner">
+          <div class="sidebar page__sidebar">
+            <div>
+              <h4 class="sidebar__title">Complex</h4>
+              <ul class="sidebar__list">
+                <li>
+                  <a class="sidebar__link" href="#">Calendar</a>
+                </li>
+                <li>
+                  <a class="sidebar__link" href="#">Modal dialog</a>
+                </li>
+                <li>
+                  <a class="sidebar__link" href="#">Histogram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="divider"></div>
+            <div>
+              <h4 class="sidebar__title">Simple</h4>
+              <ul class="sidebar__list">
+                <li>
+                  <a class="sidebar__link" href="#">Tooltip</a>
+                </li>
+                <li>
+                  <a class="sidebar__link" href="#">Custom form elements</a>
+                </li>
+                <li>
+                  <a class="sidebar__link" href="#">Avatar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page__content">
+            <h4 class="page__title">Avatar</h4>
+            <div class="avatar">
+              <img
+                class="avatar__img"
+                src="../06-lection4/01-avatar/public/avatar-200.jpg"
+                alt="user-avatar"
+              />
+            </div>
+
+            <div class="tabs">
+              <input
+                class="tabs__input visual-hidden"
+                type="radio"
+                id="#html-tab"
+                name="tabs"
+                checked
+              />
+              <input
+                class="tabs__input visual-hidden"
+                type="radio"
+                id="#css-tab"
+                name="tabs"
+              />
+
+              <div class="tabs__scroller">
+                <label class="tabs__label" for="#html-tab"> HTML </label>
+                <label class="tabs__label" for="#css-tab"> CSS </label>
+              </div>
+
+              <div class="divider divider--0"></div>
+
+              <div class="tabs__content tabs__content--html">
+                <pre class="page__pre-code">
+                  <code>
+    &lt;div class="avatar"&gt;
+      &lt;img
+        class="avatar__img"
+        src="../06-lection4/01-avatar/public/avatar-200.jpg"
+        alt="user-avatar"
+      &gt;
+    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+
+              <div class="tabs__content tabs__content--css">
+                <pre class="page__pre-code">
+                  <code>
+    .avatar {
+      width: 102px;
+      height: 102px;
+    }
+
+    .avatar__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--inner">
+      <div class="container">
+        <h5 class="footer__title">Reusable component library</h5>
+      </div>
+    </footer>
+  </body>
+</html>
