@@ -10,7 +10,7 @@
 
 .header__content {
   display: grid;
-  gap: 40px;
+  row-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'burger logo .'
@@ -33,6 +33,12 @@
 
   @media (min-width: 1025px) {
     margin: 0;
+    
+.header--inner .header__content {
+  grid-template-areas: 'burger logo .';
+
+  @media (min-width: 1025px) {
+    grid-template-areas: 'logo . dark-mode';
   }
 }
 
@@ -49,5 +55,23 @@
   @media (min-width: 1025px) {
     font-size: 50px;
     line-height: 64px;
+  }
+}
+
+.header__logo {
+  grid-area: logo;
+  margin: auto;
+
+  @media (min-width: 1025px) {
+    margin: 0;
+  }
+}
+
+.header__dark-mode {
+  grid-area: dark-mode;
+  display: none;
+
+  @media (min-width: 1025px) {
+    margin-left: auto;
   }
 }

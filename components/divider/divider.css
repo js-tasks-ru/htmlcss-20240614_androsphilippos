@@ -5,3 +5,8 @@
   margin-bottom: 24px;
   background-color: var(--gray-2);
 }
+
+.divider--0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}

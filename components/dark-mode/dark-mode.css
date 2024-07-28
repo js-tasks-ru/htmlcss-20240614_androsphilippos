@@ -1,0 +1,8 @@
+.dark-mode {
+  @media (min-width: 1025px) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+}
