@@ -11,6 +11,7 @@
 @import '../../components/logo/logo.css';
 @import '../../components/card/card.css';
 @import '../../components/divider/divider.css';
+@import '../../components/form/form.css';
 
 :root {
   --white: #ffffff;
