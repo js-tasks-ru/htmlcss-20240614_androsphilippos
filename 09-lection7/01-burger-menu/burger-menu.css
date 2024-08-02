@@ -76,14 +76,6 @@
   justify-content: center;
   align-items: center;
 
-  background-color: transparent;
-
-  @media (min-width: 1025px) {
-    display: none;
-  }
-}
-
-.burger-menu__button--close {
   border-radius: 50%;
   background-color: var(--gray-2);
 }

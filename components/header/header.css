@@ -25,6 +25,10 @@
 
 .header__burger {
   grid-area: burger;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
 }
 
 .header__logo {
@@ -33,7 +37,9 @@
 
   @media (min-width: 1025px) {
     margin: 0;
-    
+  }
+}
+
 .header--inner .header__content {
   grid-template-areas: 'burger logo .';
 
