@@ -8,12 +8,83 @@
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css" />
     <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css" />
+    <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
+    <link
+      rel="stylesheet"
+      href="./09-lection7/01-burger-menu/burger-menu.css"
+    />
+    <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <div class="logo">
+          <button
+            id="burger-menu-open"
+            class="header__burger burger"
+            type="button"
+          >
+            <svg width="24" height="24" aria-label="icon-menu">
+              <use xlink:href="./assets/images/sprite.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div id="burger-menu" class="burger-menu">
+            <div class="burger-menu__header">
+              <button
+                id="burger-menu-close"
+                class="burger-menu__button"
+                type="button"
+              >
+                <svg width="24" height="24" aria-label="icon-close">
+                  <use xlink:href="./assets/images/sprite.svg#close"></use>
+                </svg>
+              </button>
+
+              <div class="burger-menu__logo logo">
+                <div class="logo__item logo__item--square"></div>
+                <div class="logo__item logo__item--circle"></div>
+                <div class="logo__item logo__item--triangle"></div>
+              </div>
+            </div>
+
+            <div class="burger-menu__content">
+              <div class="divider"></div>
+              <div>
+                <h4 class="burger-menu__title">Complex</h4>
+                <ul class="burger-menu__list">
+                  <li>
+                    <a class="burger-menu__link" href="#">Calendar</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__link" href="#">Modal dialog</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__link" href="#">Histogram</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div>
+                <h4 class="burger-menu__title">Simple</h4>
+                <ul class="burger-menu__list">
+                  <li>
+                    <a class="burger-menu__link" href="#">Tooltip</a>
+                  </li>
+                  <li>
+                    <a class="burger-menu__link" href="#"
+                      >Custom form elements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="burger-menu__link" href="#">Avatar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__logo logo">
             <div class="logo__item logo__item--square"></div>
             <div class="logo__item logo__item--circle"></div>
             <div class="logo__item logo__item--triangle"></div>
