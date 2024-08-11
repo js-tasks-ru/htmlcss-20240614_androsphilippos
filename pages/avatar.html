@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css" />
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
     <title>Avatar</title>
+    <script
+      defer
+      src="../10-lection8/01-theme-changer/theme-changer.js"
+    ></script>
   </head>
   <body class="page page--inner">
     <header class="header header--inner">
@@ -19,21 +23,31 @@
           </a>
 
           <div class="header__dark-mode dark-mode">
-            <svg width="24" height="24" aria-label="icon-sun">
+            <svg
+              width="24"
+              height="24"
+              class="dark-mode__icon"
+              aria-label="icon-sun"
+            >
               <use xlink:href="../assets/images/sprite.svg#sun"></use>
             </svg>
-            <label for="toggler-dark-mode" class="toggler">
+            <label for="theme-changer" class="toggler">
               <input
                 class="toggler__input visual-hidden"
                 type="checkbox"
-                id="toggler-dark-mode"
+                id="theme-changer"
                 name="toggler-dark-mode"
               />
               <div class="toggler__outer-box">
                 <div class="toggler__inner-box"></div>
               </div>
             </label>
-            <svg width="24" height="24" aria-label="icon-moon">
+            <svg
+              width="24"
+              height="24"
+              class="dark-mode__icon"
+              aria-label="icon-moon"
+            >
               <use xlink:href="../assets/images/sprite.svg#moon"></use>
             </svg>
           </div>
@@ -69,7 +83,9 @@
                   <a class="sidebar__link" href="#">Custom form elements</a>
                 </li>
                 <li>
-                  <a class="sidebar__link" href="#">Avatar</a>
+                  <a class="sidebar__link sidebar__link--active" href="#"
+                    >Avatar</a
+                  >
                 </li>
               </ul>
             </div>

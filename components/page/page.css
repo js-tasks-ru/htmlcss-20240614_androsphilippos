@@ -1,5 +1,6 @@
 .page {
   min-height: 100vh;
+  background-color: var(--main-bg);
 
   @media (min-width: 1025px) {
     display: grid;
@@ -8,7 +9,7 @@
 }
 
 .page--inner {
-  background-color: var(--gray-1);
+  background-color: var(--inner-bg);
 }
 
 .page__inner {
@@ -25,7 +26,7 @@
   gap: 58px;
   padding: 32px 48px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--main-bg);
   box-shadow: var(--shadow);
 }
 
@@ -42,4 +43,5 @@
 .page__pre-code {
   font-family: monospace;
   overflow-x: auto;
+  color: var(--main-text);
 }

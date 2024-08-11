@@ -37,16 +37,27 @@
   --gray-9: #90a0b7;
   --slate: #334d6e;
   --green: #22c55e;
+  --brick: #d84910;
 
   --success: var(--green);
   --error: var(--red);
 
   --primary: var(--blue);
   --secondary: var(--purple);
+  --active: var(--brick);
+
+  --main-bg: var(--white);
+  --inner-bg: var(--gray-1);
+  --main-text: var(--black);
 
   --shadow: 0 2px 4px 0px color-mix(in srgb, var(--black), transparent 95%);
 }
 
+:root[data-theme-dark] {
+  --main-bg: var(--black);
+  --inner-bg: var(--gray-4);
+  --main-text: var(--gray-2);
+}
 * {
   font-family: 'Roboto', sans-serif;
 }
