@@ -1,7 +1,7 @@
 .preview {
   padding-top: 67px;
   padding-bottom: 204px;
-  background-color: var(--gray-1);
+  background-color: var(--inner-bg);
 }
 
 .preview__cards {
